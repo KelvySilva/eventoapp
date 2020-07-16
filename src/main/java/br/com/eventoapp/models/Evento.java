@@ -1,7 +1,13 @@
 package br.com.eventoapp.models;
 
+import com.sun.istack.NotNull;
+
+import javax.persistence.Entity;
+
+@Entity
 public class Evento extends AbstractEntity {
 
+    @NotNull
     private String nome;
     private String local;
     private String data;
